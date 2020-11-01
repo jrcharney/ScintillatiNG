@@ -1,27 +1,29 @@
 # ScintillatiNG
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
+**ScintillatiNG** is an Angualr web application that I was hoping would use browser notifications but that feature is being tabled for the moment.
 
-## Development server
+What it does featuere:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Leaflet maps
+* OpenWeatherMap for data
+* PostgreSQL database
+* A means to do geocoding
+* A proper set of instructions for how to develop applications in Angular.
 
-## Code scaffolding
+## But Jason, those don't sound like features!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+They are when you consider the instructions were were given on how to develop an Angular app did not consider how if you wanted to use Node modules written in Javascript, you need to use a `@types` package.
+Futhermore, there was no gudance on how to use Leaflet or PostgreSQL (which haas features for GIS) that employers are interested in.
+This app also corrects the linting process which no longer uses TSLint (which Angular still generates by default). Instead, ESLint has been set up with plugins to properly work with TypeScript and Angular.
 
-## Build
+With this many changes, ther is now a [**wiki**](https://github.com/jrcharney/ScintillatiNG/wiki).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Also included with this project are better instructions for using branches, espeically GitHub Pages like [the pages for this project](https://jrcharney.github.io/ScintillatiNG).
+I'm making a better project for everyone to learn and develop from.
 
-## Running unit tests
+Less geekspeak, more doing!
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+So let's get this project done right this time!
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This application is also being developed on Vim not VSCode.
