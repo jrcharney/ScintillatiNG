@@ -21,10 +21,16 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/leaflet/dist/images",
+                "output": "assets/"
+              }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              "./node_modules/leaflet/dist/leaflet.css"
             ],
             "scripts": []
           },
@@ -119,6 +125,14 @@
           }
         }
       }
-    }},
-  "defaultProject": "ScintillatiNG"
+    }
+  },
+  "defaultProject": "ScintillatiNG",
+  "schematics": {
+    "@schematics/angular": {
+      "component": {
+        "styleext": "scss"
+      }
+    }
+  }
 }
