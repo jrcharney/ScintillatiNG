@@ -12,6 +12,8 @@
   --hfgc   : #000;
   --nbgc   : #000;
   --nfgc   : #fff;
+  --menufg : #cf0;
+  --menubg : #000;
   /* TODO: colors for nav links */
   --abgc   : #000;
   --afgc   : #fff;
@@ -39,7 +41,7 @@ header, nav, main, footer, body > hr {
   margin-left:  auto;
   margin-right: auto;
   max-width:    80%;
-  padding: 3px;  /* Not suter if I should use this with body > hr */
+  padding: 3px;  /* Not sure if I should use this with body > hr */
 }
 
 header, nav, main { box-shaodw: var(--shadow); } /* Footer doesn't get a box shadow */
@@ -73,6 +75,8 @@ nav {
   color: var(--nfgc);  /* TODO: do the same thing ofr the foreground */
   margin-top: 0;
   margin-bottom: 3px; /* Give the bottom part a little space */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 /* TODO: Dropdown menu later */
@@ -81,7 +85,7 @@ nav > ul {
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: none;
+	flex-wrap: nowrap;
 	justify-content: space-evenly;
 	/* align-items: stretch;
 	justify-content: space-between; */
@@ -112,7 +116,6 @@ nav > ul > li.dropdown:hover {
 nav > ul > li.dropdown:hover > a[href] {
 	background-color: var(--menufg);
 	color: var(--menubg);
-
 }
 
 nav > ul > li.dropdown > ul {
@@ -153,7 +156,6 @@ nav > ul > li.dropdown > ul > li {
   width: 100%;
 }
 
-
 main {
   background-color: none;
   /* background-color: var(--bgc); */
@@ -162,9 +164,12 @@ main {
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 0;
-  
+ 
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; 
+
   border-bottom-left-radius: 5px;
-  border-bottom-right-raidus: 5px;
+  border-bottom-right-radius: 5px;
   min-height: calc(75vh - 50px); /* 50px is the height of the footer */
 }
 
@@ -180,13 +185,9 @@ main > article {
   margin-right: 0;
 }
 
-main > article:first-child {
- margin-top: 0;
-}
+main > article:first-child {margin-top: 0;}
 
-main > article:last-child {
- margin-bottom: 0;
-}
+main > article:last-child {margin-bottom: 0;}
 
 main > article > p {}
 
