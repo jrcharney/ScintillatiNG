@@ -142,7 +142,7 @@ nav > ul > li.dropdown > ul {
 }
 
 nav > ul > li.dropdown:hover > ul,
-nav > ul > li.dropdown: > ul:hover {
+nav > ul > li.dropdown > ul:hover {
   visibility: visible;
   opacity: 1;
   display: block;
