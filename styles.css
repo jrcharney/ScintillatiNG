@@ -72,7 +72,7 @@ nav {
   background-color: var(--nbgc); /* TODO: Use a different color for the menu background (var(--menubg);) */
   color: var(--nfgc);  /* TODO: do the same thing ofr the foreground */
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 3px; /* Give the bottom part a little space */
 }
 
 /* TODO: Dropdown menu later */
@@ -97,15 +97,14 @@ nav > ul > li {
 	display: block;
 	/* flex: 0 1 auto; */
 	margin: 0;
-	min-width: 25px;
+	min-width: 25%;
 	transition: 0.5s;
 }
 
+nav > ul > li:hover { cursor: pointer; }
 nav > ul > li > a[href] {font-weight: bold;}
 
-nav > ul > li:hover { cursor: pointer; }
-
-nav > ul > li.dropdown {}
+/* nav > ul > li.dropdown {} */
 nav > ul > li.dropdown:hover {
 	background-color: var(--menubg);
 	color: var(--menufg);
@@ -153,6 +152,7 @@ nav > ul > li.dropdown > ul > li {
   clear: both;
   width: 100%;
 }
+
 
 main {
   background-color: none;
