@@ -20,7 +20,7 @@
   --shadow : 2px 2px 5px #111;
 }
 
-/* @import url("palette.css */
+/* @import url("palette.css) */
 
 html { height: 100%; }
 
@@ -60,6 +60,7 @@ header {
   border-top-right-radius: 5px;
   text-align: center;
   margin-bottom: 0;
+  /* position: relative; */
 }
 
 header > hgroup {
@@ -130,6 +131,7 @@ nav > ul > li.dropdown > ul {
 	min-width: 20%;
 	background-color: var(--menubg);
 	color: var(--menufg);
+	box-shadow: var(--shadow);
 	
 	visibility: hidden;
 	opacity: 0;
@@ -137,7 +139,7 @@ nav > ul > li.dropdown > ul {
 	transition: all 0.5s ease;
 	margin-top: 1rem;
 
-	left: 0;
+	/* left: 0; */ /* DON'T SET THIS! The menu should appear below if you don't set anything! */
 	display: none;
 }
 
@@ -157,14 +159,17 @@ nav > ul > li.dropdown > ul > li {
 }
 
 main {
-  background-color: none;
+  background-color: transparent;
   /* background-color: var(--bgc); */
+  
+  /*
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
   padding-bottom: 0;
+  */
   margin-top: 0;
- 
+  
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; 
 
