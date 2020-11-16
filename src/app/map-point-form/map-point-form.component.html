@@ -1,0 +1,16 @@
+<div id="map-point-form">
+  <h3>Form</h3>
+  <!-- TODO: form element -->
+  <div class="field">
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" [(ngModel)]="mapPoint.name"/>
+  </div>
+  <div class="field">
+    <label for="latitude">Latitude: </label>
+    <input type="text" id="latitude" name="latitude" disabled="true" [ngModel]="mapPoint.latitude"/>
+  </div>
+  <div class="field">
+    <label for="longitude">Longitude: </label>
+    <input type="text" id="longitude" name="longitude" disabled="true" [ngModel]="mapPoint.longitude"/>
+  </div>
+</div>
