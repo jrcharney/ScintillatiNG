@@ -6,7 +6,7 @@ What it does featuere:
 
 * Leaflet maps
 * OpenWeatherMap for data
-* PostgreSQL database
+* PostgreSQL database with TypeORM and PostGIS.
 * A means to do geocoding
 * A proper set of instructions for how to develop applications in Angular.
 
